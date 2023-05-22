@@ -8,7 +8,7 @@ import com.mrivasc.marineanimaltracker.databinding.AnimalItemBinding
 
 class MarineAnimalRecyclerViewAdapter(private val clickListener: (MarineAnimalModel) -> Unit):
     RecyclerView.Adapter<MarineAnimalRecyclerViewHolder>() {
-    private val animatronics = ArrayList<MarineAnimalModel>()
+    private val animals = ArrayList<MarineAnimalModel>()
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
@@ -19,16 +19,16 @@ class MarineAnimalRecyclerViewAdapter(private val clickListener: (MarineAnimalMo
     }
 
     override fun getItemCount(): Int {
-        return animatronics.size
+        return animals.size
     }
 
     override fun onBindViewHolder(holder: MarineAnimalRecyclerViewHolder, position: Int) {
-        val animatronic = animatronics[position]
-        holder.bind(animatronic, clickListener)
+        val animal = animals[position]
+        holder.bind(animal, clickListener)
     }
 
     fun setData(animatronicsList: List<MarineAnimalModel>) {
-        animatronics.clear()
-        animatronics.addAll(animatronicsList)
+        animals.clear()
+        animals.addAll(animatronicsList)
     }
 }
