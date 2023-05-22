@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="medium_txtSize">16sp</dimen>
+    <dimen name="small_txtSize">14sp</dimen>
+    <dimen name="big_txtSize">24sp</dimen>
+    <dimen name="big_margin">24dp</dimen>
+    <dimen name="xsmall_corner">8dp</dimen>
+    <dimen name="xbig_margin">32dp</dimen>
+</resources>
